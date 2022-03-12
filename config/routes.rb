@@ -23,7 +23,16 @@ Rails.application.routes.draw do
   
   # SIGN OUT        
   get("/user_sign_out", { :controller => "user_authentication", :action => "destroy_cookies" })
-             
+  
+  #--------
+
+  # USER INDEX
+  get("/", { :controller=> "users", :action => "index"})
+
+  get("/users", { :controller=> "users", :action => "index"})
+
+
+
   #------------------------------
 
   # Routes for the Like resource:
