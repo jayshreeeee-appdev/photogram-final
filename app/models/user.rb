@@ -22,7 +22,7 @@ class User < ApplicationRecord
     :foreign_key => "author_id"
   })
   
-  has_many(:request_receiver, {
+  has_many(:received_follow_requests, {
     :class_name => "Followrequest",
     :foreign_key => "recipient_id"
   })
@@ -36,5 +36,8 @@ class User < ApplicationRecord
     :class_name => "Like",
     :foreign_key => "fan_id"
   })
+
+
+ 
 
 end

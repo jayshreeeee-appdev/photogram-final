@@ -26,10 +26,12 @@ Rails.application.routes.draw do
   
   #--------
 
-  # USER INDEX
+  # USERS STUFF
   get("/", { :controller=> "users", :action => "index"})
 
   get("/users", { :controller=> "users", :action => "index"})
+
+  get("/users/:user_id", { :controller => "users", :action => "show"})
 
 
 
