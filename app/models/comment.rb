@@ -10,4 +10,6 @@
 #  photo_id   :integer
 #
 class Comment < ApplicationRecord
+
+  validates(:author_id, {:presence => true })
 end

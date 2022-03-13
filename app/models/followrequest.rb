@@ -10,4 +10,7 @@
 #  sender_id    :integer
 #
 class Followrequest < ApplicationRecord
+
+  validates(:sender_id, {:presence => true })
+
 end

@@ -9,4 +9,8 @@
 #  photo_id   :integer
 #
 class Like < ApplicationRecord
+
+
+  validates(:fan_id, {:presence => true })
+
 end
